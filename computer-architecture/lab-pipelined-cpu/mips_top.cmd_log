@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.syr" 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 
+xst -intstyle ise -ifn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.xst" -ofn "E:/ZJU/CS/CA/Labs/sub/Lab2_mixup_reg_fork_good_sw_for/mips_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc src/mips_top.ucf -p xc7k325t-ffg676-2L mips_top.ngc mips_top.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_top_map.ncd mips_top.ngd mips_top.pcf 
+par -w -intstyle ise -ol high -mt off mips_top_map.ncd mips_top.ncd mips_top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml mips_top.twx mips_top.ncd -o mips_top.twr mips_top.pcf 
+bitgen -intstyle ise -f mips_top.ut mips_top.ncd 

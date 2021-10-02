@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="shamt_ext">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-6-18T9:50:28</timestamp>
+    <attr value="shamt_ext" name="VeriModel" />
+    <pin polarity="Output" x="192" y="-128" name="O(31:0)" />
+    <pin polarity="Input" x="32" y="-16" name="shamt(4:0)" />
+    <graph>
+        <circle r="79" cx="109" cy="-77" />
+        <line x2="172" y1="-128" y2="-128" style="linewidth:W" x1="192" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="160" y="-128" type="pin O(31:0)" />
+        <line x2="56" y1="-16" y2="-16" style="linewidth:W" x1="32" />
+        <attrtext attrname="PinName" x="72" y="-16" type="pin shamt(4:0)" />
+        <attrtext style="alignment:BCENTER;fontsize:24;fontname:Arial" attrname="SymbolName" x="112" y="-60" type="symbol" />
+    </graph>
+</symbol>

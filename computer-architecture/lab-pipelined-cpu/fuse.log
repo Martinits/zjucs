@@ -1,0 +1,73 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/sim_mips_isim_beh.exe -prj D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/sim_mips_beh.prj work.sim_mips work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/shamt_ext.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/Regs.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/REG32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/PC_4.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/MUX8T1_32bit.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/MUX4T1_5.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/MUX4T1_32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/MUX2T1_32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/MEM_WB.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/LUI32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/IF_ID.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/ID_EX.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/EX_MEM.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/Ext32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/equal32.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/debug_datapath.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/ALU.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/addr4jjal.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/add4beqbne.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/Datapath.vf" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/Controller.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/pipelined_cpu.vf" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/inst_rom.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/data_ram.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/cpu/mips_core.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/mips.v" into library work
+Analyzing Verilog file "D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/src/sim_mips.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module REG32
+Compiling module VCC
+Compiling module PC_4
+Compiling module MUX4T1_32
+Compiling module MUX2T1_32
+Compiling module shamt_ext
+Compiling module Ext32
+Compiling module LUI32
+Compiling module MUX4T1_5
+Compiling module Regs
+Compiling module MUX8T1_32bit
+Compiling module equal32
+Compiling module add4beqbne
+Compiling module addr4jjal
+Compiling module BUF
+Compiling module AND2
+Compiling module debug_datapath
+Compiling module IF_ID
+Compiling module ID_EX
+Compiling module EX_MEM
+Compiling module MEM_WB
+Compiling module ALU
+Compiling module Datapath_MUSER_pipelined_cpu
+Compiling module Controller
+Compiling module pipelined_cpu
+Compiling module mips_core
+Compiling module inst_rom
+Compiling module data_ram
+Compiling module mips
+Compiling module sim_mips
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable D:/ZJU/CS/CA/Labs/Lab2/Lab2_mixup_reg_fork_good_sw_for/sim_mips_isim_beh.exe
+Fuse Memory Usage: 33900 KB
+Fuse CPU Usage: 515 ms

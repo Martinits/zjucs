@@ -1,0 +1,20 @@
+00    200A0004    addi $10, $zero, 0x0004       idx  tag
+04    8D410000    lw $1, 0($10)             read 0 0f 0     miss clean
+08    200A0028    addi $10, $zero, 0x0028
+0c    8D420000    lw $2, 0($10)             read 1 of 0     miss clean
+10    3C0BC000    lui $11, 0xc000
+14    200A000C    addi $10, $zero, 0x000c
+18    AD4B0000    sw $11, 0($10)           write 0 of 0     hit
+1c    200A000C    addi $10, $zero, 0x000c
+20    8D430000    lw $3, 0($10)             read 0 of 0     hit
+24    3C0B0A00    lui $11, 0x0a00
+28    200A00A0    addi $10, $zero, 0x00a0
+2c    AD4B0000    sw $11, 0($10)           write 1 of 1     miss clean
+30    200A00A0    addi $10, $zero, 0x00a0
+34    8D440000    lw $4, 0($10)             check
+38    200A008C    addi $10, $zero, 0x008c
+3c    8D440000    lw $4, 0($10)             read 0 of 1     miss dirty
+40    3C0B8200    lui $11, 0x8200
+44    200A0028    addi $10, $zero, 0x0028
+48    AD4B0000    sw $11, 0($10)           write 1 of 0     miss dirty
+4c    8D440000    lw $4, 0($10)             check

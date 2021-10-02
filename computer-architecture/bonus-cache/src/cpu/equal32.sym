@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="equal32">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-11-3T14:9:35</timestamp>
+    <attr value="equal32" name="VeriModel" />
+    <pin polarity="Input" x="32" y="-96" name="A(31:0)" />
+    <pin polarity="Input" x="32" y="-64" name="B(31:0)" />
+    <pin polarity="Output" x="240" y="-64" name="isequal" />
+    <graph>
+        <rect width="144" x="64" y="-112" height="68" />
+        <attrtext attrname="PinName" x="72" y="-96" type="pin A(31:0)" />
+        <line x2="32" y1="-96" y2="-96" style="linewidth:W" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-64" type="pin B(31:0)" />
+        <line x2="32" y1="-64" y2="-64" style="linewidth:W" x1="64" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="200" y="-64" type="pin isequal" />
+        <line x2="240" y1="-64" y2="-64" x1="208" />
+        <attrtext style="alignment:BCENTER;fontsize:20;fontname:Arial" attrname="SymbolName" x="168" y="-80" type="symbol" />
+    </graph>
+</symbol>

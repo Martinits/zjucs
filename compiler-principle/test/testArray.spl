@@ -1,0 +1,11 @@
+program Arraytest;
+const
+    min = 0;
+    max = 10;
+var
+    a : array[min..max] of integer;
+begin
+    a[min + 2] := max;
+    writeln(a[min + 2]);
+end
+.

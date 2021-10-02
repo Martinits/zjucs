@@ -1,0 +1,438 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : pipelined_cpu.vf
+// /___/   /\     Timestamp : 01/03/2021 20:01:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/ZJU/CS/CA/Labs/Bonus/Cache/pipelined_cpu.vf -w E:/ZJU/CS/CA/Labs/Bonus/Cache/src/cpu/pipelined_cpu.sch
+//Design Name: pipelined_cpu
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Datapath_MUSER_pipelined_cpu(clk, 
+                                    cpu_en, 
+                                    ctrl_sig_in, 
+                                    data_in, 
+                                    debug_addr, 
+                                    ins_in, 
+                                    pc_write, 
+                                    pipereg_we, 
+                                    pipereg_zero, 
+                                    rst, 
+                                    beqbne_equal, 
+                                    data_addr_out, 
+                                    data_out, 
+                                    debug_data, 
+                                    ex_ins, 
+                                    id_ins, 
+                                    ins_addr_out, 
+                                    ins_read, 
+                                    mem_ins, 
+                                    mem_read, 
+                                    mem_write, 
+                                    overflow, 
+                                    wb_ins, 
+                                    zero);
+
+    input clk;
+    input cpu_en;
+    input [35:0] ctrl_sig_in;
+    input [31:0] data_in;
+    input [5:0] debug_addr;
+    input [31:0] ins_in;
+    input pc_write;
+    input [3:0] pipereg_we;
+    input [3:0] pipereg_zero;
+    input rst;
+   output beqbne_equal;
+   output [31:0] data_addr_out;
+   output [31:0] data_out;
+   output [31:0] debug_data;
+   output [32:0] ex_ins;
+   output [32:0] id_ins;
+   output [31:0] ins_addr_out;
+   output ins_read;
+   output [32:0] mem_ins;
+   output mem_read;
+   output mem_write;
+   output overflow;
+   output [32:0] wb_ins;
+   output zero;
+   
+   wire [35:0] ex_sig;
+   wire [35:0] mem_sig;
+   wire [31:0] sw;
+   wire [31:0] sxsasxa;
+   wire V5;
+   wire [35:0] wb_sig;
+   wire [31:0] XLXN_301;
+   wire [31:0] XLXN_308;
+   wire [31:0] XLXN_314;
+   wire [31:0] XLXN_315;
+   wire [31:0] XLXN_336;
+   wire [31:0] XLXN_337;
+   wire [4:0] XLXN_380;
+   wire [31:0] XLXN_390;
+   wire [31:0] XLXN_403;
+   wire [31:0] XLXN_405;
+   wire [31:0] XLXN_500;
+   wire [31:0] XLXN_501;
+   wire [31:0] XLXN_502;
+   wire [31:0] XLXN_503;
+   wire [31:0] XLXN_506;
+   wire [31:0] XLXN_507;
+   wire [31:0] XLXN_508;
+   wire [31:0] XLXN_510;
+   wire [31:0] XLXN_512;
+   wire [31:0] XLXN_516;
+   wire [31:0] XLXN_570;
+   wire [31:0] XLXN_581;
+   wire [31:0] XLXN_583;
+   wire XLXN_590;
+   wire [31:0] XLXN_605;
+   wire [31:0] XLXN_606;
+   wire [31:0] XLXN_621;
+   wire [31:0] XLXN_625;
+   wire [31:0] XLXN_627;
+   wire [31:0] XLXN_647;
+   wire [31:0] XLXN_664;
+   wire mem_write_DUMMY;
+   wire [32:0] wb_ins_DUMMY;
+   wire [32:0] ex_ins_DUMMY;
+   wire ins_read_DUMMY;
+   wire [32:0] mem_ins_DUMMY;
+   wire [32:0] id_ins_DUMMY;
+   wire [31:0] data_addr_out_DUMMY;
+   wire mem_read_DUMMY;
+   wire [31:0] ins_addr_out_DUMMY;
+   
+   assign data_addr_out[31:0] = data_addr_out_DUMMY[31:0];
+   assign ex_ins[32:0] = ex_ins_DUMMY[32:0];
+   assign id_ins[32:0] = id_ins_DUMMY[32:0];
+   assign ins_addr_out[31:0] = ins_addr_out_DUMMY[31:0];
+   assign ins_read = ins_read_DUMMY;
+   assign mem_ins[32:0] = mem_ins_DUMMY[32:0];
+   assign mem_read = mem_read_DUMMY;
+   assign mem_write = mem_write_DUMMY;
+   assign wb_ins[32:0] = wb_ins_DUMMY[32:0];
+   REG32  PC (.clk(clk), 
+             .Di(XLXN_301[31:0]), 
+             .EN(pc_write), 
+             .rst(rst), 
+             .Do(ins_addr_out_DUMMY[31:0]));
+   VCC  XLXI_13 (.P(V5));
+   PC_4  XLXI_73 (.PC(ins_addr_out_DUMMY[31:0]), 
+                 .PC4(XLXN_512[31:0]));
+   MUX4T1_32  XLXI_74 (.I0(XLXN_512[31:0]), 
+                      .I1(XLXN_510[31:0]), 
+                      .I2(XLXN_516[31:0]), 
+                      .I3(XLXN_500[31:0]), 
+                      .SEL(ctrl_sig_in[15:14]), 
+                      .O(XLXN_301[31:0]));
+   MUX2T1_32  XLXI_89 (.A(XLXN_606[31:0]), 
+                      .B(XLXN_337[31:0]), 
+                      .SEL(ctrl_sig_in[9]), 
+                      .O(XLXN_314[31:0]));
+   MUX2T1_32  XLXI_90 (.A(XLXN_501[31:0]), 
+                      .B(XLXN_336[31:0]), 
+                      .SEL(ctrl_sig_in[8]), 
+                      .O(XLXN_315[31:0]));
+   shamt_ext  XLXI_91 (.shamt(id_ins_DUMMY[10:6]), 
+                      .O(XLXN_337[31:0]));
+   Ext32  XLXI_92 (.Ext_sel(ctrl_sig_in[7]), 
+                  .I(id_ins_DUMMY[15:0]), 
+                  .O(XLXN_336[31:0]));
+   LUI32  XLXI_98 (.I(ex_ins_DUMMY[15:0]), 
+                  .O(XLXN_621[31:0]));
+   MUX4T1_5  XLXI_99 (.I0(wb_ins_DUMMY[20:16]), 
+                     .I1(wb_ins_DUMMY[15:11]), 
+                     .I2({V5, V5, V5, V5, V5}), 
+                     .I3(), 
+                     .SEL(wb_sig[5:4]), 
+                     .O(XLXN_380[4:0]));
+   MUX4T1_32  XLXI_101 (.I0(XLXN_405[31:0]), 
+                       .I1(sxsasxa[31:0]), 
+                       .I2(XLXN_647[31:0]), 
+                       .I3(XLXN_403[31:0]), 
+                       .SEL(wb_sig[3:2]), 
+                       .O(XLXN_570[31:0]));
+   Regs  XLXI_104 (.clk(clk), 
+                  .debug_reg_addr(debug_addr[4:0]), 
+                  .rst(rst), 
+                  .R_addr_A(id_ins_DUMMY[25:21]), 
+                  .R_addr_B(id_ins_DUMMY[20:16]), 
+                  .we(XLXN_590), 
+                  .W_addr(XLXN_380[4:0]), 
+                  .W_data(XLXN_570[31:0]), 
+                  .debug_reg_data(XLXN_605[31:0]), 
+                  .R_data_A(XLXN_606[31:0]), 
+                  .R_data_B(XLXN_501[31:0]));
+   MUX8T1_32bit  XLXI_111 (.I0(XLXN_606[31:0]), 
+                          .I1(XLXN_502[31:0]), 
+                          .I2(XLXN_503[31:0]), 
+                          .I3(XLXN_621[31:0]), 
+                          .I4(data_addr_out_DUMMY[31:0]), 
+                          .I5(XLXN_506[31:0]), 
+                          .I6(XLXN_507[31:0]), 
+                          .I7(sxsasxa[31:0]), 
+                          .SEL(ctrl_sig_in[31:29]), 
+                          .O(XLXN_500[31:0]));
+   MUX8T1_32bit  XLXI_112 (.I0(XLXN_501[31:0]), 
+                          .I1(XLXN_502[31:0]), 
+                          .I2(XLXN_503[31:0]), 
+                          .I3(XLXN_621[31:0]), 
+                          .I4(data_addr_out_DUMMY[31:0]), 
+                          .I5(XLXN_506[31:0]), 
+                          .I6(XLXN_507[31:0]), 
+                          .I7(sxsasxa[31:0]), 
+                          .SEL(ctrl_sig_in[28:26]), 
+                          .O(XLXN_508[31:0]));
+   equal32  XLXI_114 (.A(XLXN_500[31:0]), 
+                     .B(XLXN_508[31:0]), 
+                     .isequal(beqbne_equal));
+   add4beqbne  XLXI_116 (.offset(id_ins_DUMMY[15:0]), 
+                        .pc_4(XLXN_308[31:0]), 
+                        .dest(XLXN_510[31:0]));
+   addr4jjal  XLXI_117 (.ins(id_ins_DUMMY[31:0]), 
+                       .pc_4(XLXN_308[31:0]), 
+                       .dest(XLXN_516[31:0]));
+   MUX8T1_32bit  XLXI_127 (.I0(XLXN_583[31:0]), 
+                          .I1(data_addr_out_DUMMY[31:0]), 
+                          .I2(XLXN_506[31:0]), 
+                          .I3(XLXN_507[31:0]), 
+                          .I4(XLXN_405[31:0]), 
+                          .I5(XLXN_647[31:0]), 
+                          .I6(XLXN_403[31:0]), 
+                          .I7(sxsasxa[31:0]), 
+                          .SEL(ex_sig[25:23]), 
+                          .O(XLXN_627[31:0]));
+   MUX8T1_32bit  XLXI_128 (.I0(XLXN_581[31:0]), 
+                          .I1(data_addr_out_DUMMY[31:0]), 
+                          .I2(XLXN_506[31:0]), 
+                          .I3(XLXN_507[31:0]), 
+                          .I4(XLXN_405[31:0]), 
+                          .I5(XLXN_647[31:0]), 
+                          .I6(XLXN_403[31:0]), 
+                          .I7(sxsasxa[31:0]), 
+                          .SEL(ex_sig[22:20]), 
+                          .O(XLXN_625[31:0]));
+   MUX8T1_32bit  XLXI_129 (.I0(XLXN_390[31:0]), 
+                          .I1(data_addr_out_DUMMY[31:0]), 
+                          .I2(XLXN_506[31:0]), 
+                          .I3(XLXN_507[31:0]), 
+                          .I4(XLXN_405[31:0]), 
+                          .I5(XLXN_647[31:0]), 
+                          .I6(XLXN_403[31:0]), 
+                          .I7(sxsasxa[31:0]), 
+                          .SEL(ex_sig[19:17]), 
+                          .O(XLXN_664[31:0]));
+   BUF  XLXI_132 (.I(pipereg_we[0]), 
+                 .O(ins_read_DUMMY));
+   AND2  XLXI_133 (.I0(wb_sig[6]), 
+                  .I1(cpu_en), 
+                  .O(XLXN_590));
+   debug_datapath  XLXI_134 (.alu_a(XLXN_625[31:0]), 
+                            .alu_b(XLXN_664[31:0]), 
+                            .alu_res(XLXN_502[31:0]), 
+                            .data_addr_out(data_addr_out_DUMMY[31:0]), 
+                            .data_imm(XLXN_336[31:0]), 
+                            .data_in(data_in[31:0]), 
+                            .data_out(sw[31:0]), 
+                            .data_rs(XLXN_606[31:0]), 
+                            .data_rt(XLXN_501[31:0]), 
+                            .debug_addr(debug_addr[5:0]), 
+                            .debug_reg_data(XLXN_605[31:0]), 
+                            .ex_addr(XLXN_503[31:0]), 
+                            .ex_ins(ex_ins_DUMMY[32:0]), 
+                            .id_addr(XLXN_308[31:0]), 
+                            .id_ins(id_ins_DUMMY[32:0]), 
+                            .if_addr(ins_addr_out_DUMMY[31:0]), 
+                            .if_ins(ins_in[31:0]), 
+                            .ins_read(ins_read_DUMMY), 
+                            .mem_addr(XLXN_506[31:0]), 
+                            .mem_ins(mem_ins_DUMMY[32:0]), 
+                            .mem_read(mem_read_DUMMY), 
+                            .mem_write(mem_write_DUMMY), 
+                            .pipereg_we(pipereg_we[3:0]), 
+                            .pipereg_zero(pipereg_zero[3:0]), 
+                            .regwrite_addr(XLXN_380[4:0]), 
+                            .regwrite_data(XLXN_570[31:0]), 
+                            .wb_addr(XLXN_647[31:0]), 
+                            .wb_ins(wb_ins_DUMMY[32:0]), 
+                            .debug_data(debug_data[31:0]));
+   BUF  XLXI_135 (.I(mem_sig[1]), 
+                 .O(mem_write_DUMMY));
+   BUF  XLXI_136 (.I(mem_sig[0]), 
+                 .O(mem_read_DUMMY));
+   IF_ID  XLXI_141 (.clk(clk), 
+                   .ins(ins_in[31:0]), 
+                   .pc_4(XLXN_512[31:0]), 
+                   .rst(rst), 
+                   .we(pipereg_we[0]), 
+                   .zero(pipereg_zero[0]), 
+                   .ins_out(id_ins_DUMMY[32:0]), 
+                   .pc_4_out(XLXN_308[31:0]));
+   ID_EX  XLXI_142 (.alu_a(XLXN_314[31:0]), 
+                   .alu_b(XLXN_315[31:0]), 
+                   .clk(clk), 
+                   .ctrl_sig(ctrl_sig_in[35:0]), 
+                   .ins(id_ins_DUMMY[32:0]), 
+                   .pc_4(XLXN_308[31:0]), 
+                   .rst(rst), 
+                   .sw_data(XLXN_501[31:0]), 
+                   .we(pipereg_we[1]), 
+                   .zero(pipereg_zero[1]), 
+                   .alu_a_out(XLXN_581[31:0]), 
+                   .alu_b_out(XLXN_390[31:0]), 
+                   .ctrl_sig_out(ex_sig[35:0]), 
+                   .ins_out(ex_ins_DUMMY[32:0]), 
+                   .pc_4_out(XLXN_503[31:0]), 
+                   .sw_data_out(XLXN_583[31:0]));
+   EX_MEM  XLXI_143 (.alu_res(XLXN_502[31:0]), 
+                    .clk(clk), 
+                    .ctrl_sig(ex_sig[35:0]), 
+                    .ins(ex_ins_DUMMY[32:0]), 
+                    .lui32(XLXN_621[31:0]), 
+                    .pc_4(XLXN_503[31:0]), 
+                    .rst(rst), 
+                    .sw_data(XLXN_627[31:0]), 
+                    .we(pipereg_we[2]), 
+                    .zero(pipereg_zero[2]), 
+                    .alu_res_out(data_addr_out_DUMMY[31:0]), 
+                    .ctrl_sig_out(mem_sig[35:0]), 
+                    .ins_out(mem_ins_DUMMY[32:0]), 
+                    .lui32_out(XLXN_507[31:0]), 
+                    .pc_4_out(XLXN_506[31:0]), 
+                    .sw_data_out(sw[31:0]));
+   MEM_WB  XLXI_144 (.alu_res(data_addr_out_DUMMY[31:0]), 
+                    .clk(clk), 
+                    .ctrl_sig(mem_sig[35:0]), 
+                    .ins(mem_ins_DUMMY[32:0]), 
+                    .lui32(XLXN_507[31:0]), 
+                    .mem_data(data_in[31:0]), 
+                    .pc_4(XLXN_506[31:0]), 
+                    .rst(rst), 
+                    .we(pipereg_we[3]), 
+                    .zero(pipereg_zero[3]), 
+                    .alu_res_out(XLXN_405[31:0]), 
+                    .ctrl_sig_out(wb_sig[35:0]), 
+                    .ins_out(wb_ins_DUMMY[32:0]), 
+                    .lui32_out(XLXN_403[31:0]), 
+                    .mem_data_out(sxsasxa[31:0]), 
+                    .pc_4_out(XLXN_647[31:0]));
+   ALU  XLXI_150 (.A(XLXN_625[31:0]), 
+                 .B(XLXN_664[31:0]), 
+                 .ctrl(ex_sig[13:10]), 
+                 .overflow(overflow), 
+                 .res(XLXN_502[31:0]), 
+                 .zero(zero));
+   MUX2T1_32  XLXI_151 (.A(sw[31:0]), 
+                       .B(sxsasxa[31:0]), 
+                       .SEL(mem_sig[35]), 
+                       .O(data_out[31:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module pipelined_cpu(cache_rdy, 
+                     clk, 
+                     data_in, 
+                     debug_addr, 
+                     debug_en, 
+                     debug_step, 
+                     ins_in, 
+                     rst, 
+                     data_addr_out, 
+                     data_out, 
+                     debug_data, 
+                     ins_addr_out, 
+                     ins_read, 
+                     mem_read, 
+                     mem_write);
+
+    input cache_rdy;
+    input clk;
+    input [31:0] data_in;
+    input [5:0] debug_addr;
+    input debug_en;
+    input debug_step;
+    input [31:0] ins_in;
+    input rst;
+   output [31:0] data_addr_out;
+   output [31:0] data_out;
+   output [31:0] debug_data;
+   output [31:0] ins_addr_out;
+   output ins_read;
+   output mem_read;
+   output mem_write;
+   
+   wire [32:0] XLXN_36;
+   wire [32:0] XLXN_37;
+   wire [32:0] XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire [35:0] XLXN_41;
+   wire [3:0] XLXN_42;
+   wire [3:0] XLXN_43;
+   wire XLXN_44;
+   wire [32:0] XLXN_47;
+   wire XLXN_48;
+   wire mem_write_DUMMY;
+   wire mem_read_DUMMY;
+   
+   assign mem_read = mem_read_DUMMY;
+   assign mem_write = mem_write_DUMMY;
+   Datapath_MUSER_pipelined_cpu  XLXI_2 (.clk(clk), 
+                                        .cpu_en(XLXN_44), 
+                                        .ctrl_sig_in(XLXN_41[35:0]), 
+                                        .data_in(data_in[31:0]), 
+                                        .debug_addr(debug_addr[5:0]), 
+                                        .ins_in(ins_in[31:0]), 
+                                        .pc_write(XLXN_40), 
+                                        .pipereg_we(XLXN_42[3:0]), 
+                                        .pipereg_zero(XLXN_43[3:0]), 
+                                        .rst(rst), 
+                                        .beqbne_equal(XLXN_39), 
+                                        .data_addr_out(data_addr_out[31:0]), 
+                                        .data_out(data_out[31:0]), 
+                                        .debug_data(debug_data[31:0]), 
+                                        .ex_ins(XLXN_36[32:0]), 
+                                        .id_ins(XLXN_47[32:0]), 
+                                        .ins_addr_out(ins_addr_out[31:0]), 
+                                        .ins_read(ins_read), 
+                                        .mem_ins(XLXN_37[32:0]), 
+                                        .mem_read(mem_read_DUMMY), 
+                                        .mem_write(mem_write_DUMMY), 
+                                        .overflow(), 
+                                        .wb_ins(XLXN_38[32:0]), 
+                                        .zero());
+   Controller  XLXI_3 (.beqbne_equal(XLXN_39), 
+                      .cache_rdy(cache_rdy), 
+                      .clk(clk), 
+                      .debug_en(debug_en), 
+                      .debug_step(debug_step), 
+                      .ex_ins(XLXN_36[32:0]), 
+                      .id_ins(XLXN_47[32:0]), 
+                      .mem_ins(XLXN_37[32:0]), 
+                      .mem_rw(XLXN_48), 
+                      .rst(rst), 
+                      .wb_ins(XLXN_38[32:0]), 
+                      .cpu_en(XLXN_44), 
+                      .pc_write(XLXN_40), 
+                      .pipereg_we(XLXN_42[3:0]), 
+                      .pipereg_zero(XLXN_43[3:0]), 
+                      .signals(XLXN_41[35:0]));
+   OR2  XLXI_4 (.I0(mem_read_DUMMY), 
+               .I1(mem_write_DUMMY), 
+               .O(XLXN_48));
+endmodule

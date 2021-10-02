@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ZJU\CS\CA\Labs\sub\Lab2_mixup_reg_fork_good_sw_for\mips_top.ncd
+OUTFILE=E:\ZJU\CS\CA\Labs\sub\Lab2_mixup_reg_fork_good_sw_for\mips_top.bit
+FAMILY=Kintex7
+PART=xc7k325t-2lffg676
+WORKINGDIR=E:\ZJU\CS\CA\Labs\sub\Lab2_mixup_reg_fork_good_sw_for
+LICENSE=ISE
+USER_INFO=__0_0_0

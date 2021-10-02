@@ -1,0 +1,8 @@
+This project needs following runtime libraries:
+    libc
+    libm
+    libpthread
+    librt
+    libdl
+    libz
+    libtinfo (maynot preinstalled in some dists of ubuntu, if so, please install manually)

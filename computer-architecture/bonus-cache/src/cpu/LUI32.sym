@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="LUI32">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-6-18T9:54:3</timestamp>
+    <attr value="LUI32" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-32" name="I(15:0)" />
+    <pin polarity="Output" x="160" y="-128" name="O(31:0)" />
+    <graph>
+        <line x2="16" y1="-32" y2="-32" style="linewidth:W" x1="0" />
+        <circle r="76" cx="78" cy="-76" />
+        <attrtext attrname="PinName" x="24" y="-32" type="pin I(15:0)" />
+        <attrtext style="alignment:BCENTER;fontsize:24;fontname:Arial" attrname="SymbolName" x="80" y="-56" type="symbol" />
+        <line x2="136" y1="-128" y2="-128" style="linewidth:W" x1="160" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="120" y="-128" type="pin O(31:0)" />
+    </graph>
+</symbol>

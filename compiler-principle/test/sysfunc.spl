@@ -1,0 +1,19 @@
+program ArrayTest;
+
+begin
+	writeln(abs(-8));
+	writeln(abs(8.456));
+	writeln(chr(65));
+	writeln(ord('c'));
+	writeln(odd(56));
+	writeln(odd(3));
+	writeln(pred(9));
+	writeln(pred('g'));
+	writeln(succ(3));
+	writeln(succ('d'));
+	writeln(sqr(4));
+	writeln(sqr(1.6));
+	writeln(sqrt(33));
+	writeln(sqrt(4.56));
+end
+.

@@ -1,0 +1,19 @@
+program Recordtest;
+var
+    rec : record
+        i : integer;
+        r : real;
+        c : char;
+        b : boolean;
+    end;
+begin
+    rec.i := 1;
+    rec.r := 1.1;
+    rec.c := 'a';
+    rec.b := true;
+    writeln(rec.i);
+    writeln(rec.r);
+    writeln(rec.c);
+    writeln(rec.b);
+end
+.

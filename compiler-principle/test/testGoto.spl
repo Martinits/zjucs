@@ -1,0 +1,16 @@
+program testGoto;
+
+var
+    i : integer;
+
+begin
+    i := 0;
+1:
+    writeln(i);
+    if i < 5 then
+    begin
+        i := i + 1;
+        goto 1;
+    end;
+end
+.

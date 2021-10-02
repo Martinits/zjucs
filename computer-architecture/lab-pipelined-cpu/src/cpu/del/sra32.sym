@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="sra32">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-5-5T8:18:19</timestamp>
+    <attr value="sra32" name="VeriModel" />
+    <pin polarity="Output" x="304" y="-96" name="O(31:0)" />
+    <pin polarity="Input" x="16" y="-96" name="A(31:0)" />
+    <pin polarity="Input" x="16" y="-32" name="B(31:0)" />
+    <graph>
+        <rect width="200" x="64" y="-128" height="128" />
+        <attrtext attrname="PinName" x="72" y="-96" type="pin A(31:0)" />
+        <line x2="16" y1="-96" y2="-96" style="linewidth:W" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-32" type="pin B(31:0)" />
+        <line x2="16" y1="-32" y2="-32" style="linewidth:W" x1="64" />
+        <attrtext style="alignment:BCENTER;fontsize:36;fontname:Arial" attrname="SymbolName" x="168" y="-44" type="symbol" />
+        <line x2="304" y1="-96" y2="-96" style="linewidth:W" x1="264" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="256" y="-96" type="pin O(31:0)" />
+    </graph>
+</symbol>

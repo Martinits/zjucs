@@ -1,0 +1,81 @@
+program testBuildIn;
+
+var
+    b1 : boolean;
+    b2 : boolean;
+    b3 : boolean;
+    c1 : char;
+    c2 : char;
+    c3 : char;
+    i1 : integer;
+    i2 : integer;
+    i3 : integer;
+    r1 : real;
+    r2 : real;
+    r3 : real;
+
+begin
+    b1 := true;
+    b2 := false;
+    writeln(b1);
+    writeln(b2);
+    b3 := b1 and b2;
+    writeln(b3);
+    b3 := b1 or b2;
+    writeln(b3);
+
+    i1 := 13;
+    i2 := 10;
+    writeln(i1);
+    writeln(i2);
+    i3 := i1 + i2;
+    writeln(i3);
+    i3 := i1 - i2;
+    writeln(i3);
+    i3 := i1 * i2;
+    writeln(i3);
+    i3 := i1 / i2;
+    writeln(i3);
+    i3 := i1 mod i2;
+    writeln(i3);
+    b3 := i1 > i2;
+    writeln(b3);
+    b3 := i1 >= i2;
+    writeln(b3);
+    b3 := i1 < i2;
+    writeln(b3);
+    b3 := i1 <= i2;
+    writeln(b3);
+    b3 := i1 = i2;
+    writeln(b3);
+    b3 := i1 <> i2;
+    writeln(b3);
+
+    r1 := 31.5;
+    r2 := 23.7;
+    writeln(r1);
+    writeln(r2);
+    r3 := r1 + r2;
+    writeln(r3);
+    r3 := r1 - r2;
+    writeln(r3);
+    r3 := r1 * r2;
+    writeln(r3);
+    r3 := r1 / r2;
+    writeln(r3);
+    r3 := r1 mod r2;
+    writeln(r3);
+    b3 := r1 > r2;
+    writeln(b3);
+    b3 := r1 >= r2;
+    writeln(b3);
+    b3 := r1 < r2;
+    writeln(b3);
+    b3 := r1 <= r2;
+    writeln(b3);
+    b3 := r1 = r2;
+    writeln(b3);
+    b3 := r1 <> r2;
+    writeln(b3);
+end
+.

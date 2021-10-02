@@ -1,0 +1,50 @@
+program tydeftest;
+
+type
+    myint = integer;
+    mychar = char;
+    myreal = real;
+    mybool = boolean;
+    mymyint = myint;
+    myarr = array[4..8] of integer;
+    myrec = record
+				ra, rb : integer;
+				rc : char;
+			end;
+var 
+    i : myint;
+    d : myreal;
+    c : mychar;
+    b : mybool;
+    ii : mymyint;
+    arr : myarr;
+    r : myrec;
+
+begin
+    i := 4;
+    d := 9.89;
+    c := 'g';
+    b := false;
+    ii := 45;
+    writeln(i);
+    writeln(d);
+    writeln(c);
+    writeln(b);
+    writeln(ii);
+    i := 0;  
+	for i := 4 to 8 do
+	begin
+		arr[i] := i;
+	end;
+	for i := 4 to 8 do
+	begin
+		writeln(arr[i]);
+	end;
+	r.ra := 1234;
+	r.rb := 2345;
+	r.rc := 'c';
+	writeln(r.ra);
+	writeln(r.rb);
+	writeln(r.rc);
+end
+.

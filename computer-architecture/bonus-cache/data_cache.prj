@@ -1,0 +1,2 @@
+verilog work "src/data_ram.v"
+verilog work "src/data_cache.v"

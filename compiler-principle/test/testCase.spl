@@ -1,0 +1,18 @@
+program testCase;
+var
+    i : integer;
+begin
+    i := 1;
+    case i of
+        1: writeln('1');
+        2: writeln('2');
+        3: writeln('3');
+    end;
+    i := 2;
+    case i of
+        1: writeln('1');
+        2: writeln('2');
+        3: writeln('3');
+    end;
+end
+.

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/ZJU/CS/CA/Labs/Bonus/Cache/data_cache_sim_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="data_cache_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/data_cache_sim/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/r0w1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r0w1</obj_property>
+      <obj_property name="ObjectShortName">r0w1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/m0h1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m0h1</obj_property>
+      <obj_property name="ObjectShortName">m0h1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/valid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">valid[0:3]</obj_property>
+      <obj_property name="ObjectShortName">valid[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/dirty" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dirty[0:3]</obj_property>
+      <obj_property name="ObjectShortName">dirty[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/tag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag[0:3,24:0]</obj_property>
+      <obj_property name="ObjectShortName">tag[0:3,24:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/cache" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cache[0:3,255:0]</obj_property>
+      <obj_property name="ObjectShortName">cache[0:3,255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/data_cache_sim/uut/cache[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,255:0]</obj_property>
+         <obj_property name="ObjectShortName">cache[0,255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/cache[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,255:0]</obj_property>
+         <obj_property name="ObjectShortName">cache[1,255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/cache[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,255:0]</obj_property>
+         <obj_property name="ObjectShortName">cache[2,255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/cache[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,255:0]</obj_property>
+         <obj_property name="ObjectShortName">cache[3,255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/ram_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_write</obj_property>
+      <obj_property name="ObjectShortName">ram_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/counter_set" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_set</obj_property>
+      <obj_property name="ObjectShortName">counter_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/addr_tag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_tag[24:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_tag[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/ram_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/ram_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_din[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/ram_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_dout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/counter_rev" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_rev[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_rev[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[0:63,31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[0:63,31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[0,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[1,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[2,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[3,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[4,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[5,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[6,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[7,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[8,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[9,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[10,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[11,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[12,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[13,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[14,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[15,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[16,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[17,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[18,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[19,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[20,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[21,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[22,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[23,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[24,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[25,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[26,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[27,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[28,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[29,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[30,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[32,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[33,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[34,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[35,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[36,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[37,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[38,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[39,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[40,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[41,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[42,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[43,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[44,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[45,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[46,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[47,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[48,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[49,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[50,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[51]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[51,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[51,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[52]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[52,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[52,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[53]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[53,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[53,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[54]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[54,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[54,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[55]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[55,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[55,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[56]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[56,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[56,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[57]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[57,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[57,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[58]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[58,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[58,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[59]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[59,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[59,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[60]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[60,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[60,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[61]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[61,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[61,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[62]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[62,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[62,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/data_cache_sim/uut/DATA_RAM/data[63]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[63,31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[63,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

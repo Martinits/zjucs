@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/btn_scan.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/btn_scan.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/define.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/btn_scan.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/btn_scan.v</arg>&quot; Line <arg fmt="%d" index="2">17</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/function.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/btn_scan.v&quot; line 17
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/clk_diff.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/ALU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/Controller.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/EX_MEM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/Ext32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/ID_EX.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/IF_ID.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/LUI32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/MEM_WB.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/MUX2T1_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/MUX4T1_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/MUX4T1_5.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/MUX8T1_32bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/PC_4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/REG32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/Regs.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/add4beqbne.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/addr4jjal.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/debug_datapath.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/equal32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/mips_core.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/cpu/shamt_ext.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/data_ram.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/display.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/display.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/define.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/display.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/display.v</arg>&quot; Line <arg fmt="%d" index="2">27</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/function.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/display.v&quot; line 27
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/inst_rom.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/define.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips_top.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/define.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/mips_top.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/my_clk_gen.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/parallel2serial.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/parallel2serial.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/define.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/parallel2serial.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/parallel2serial.v</arg>&quot; Line <arg fmt="%d" index="2">20</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/function.vh&apos; in file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/parallel2serial.v&quot; line 20
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/sim_mips.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/vga.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/ZJU/CS/CA/Labs/Lab2/Lab4/src/vga_debug.v&quot; into library work</arg>
+</msg>
+
+</messages>
+
